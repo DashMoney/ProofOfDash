@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+body,
+html {
+  overscroll-behavior-y: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#dash-bkgd {
+  position: absolute;
+  opacity: 0.3;
+  width: 90%;
+  padding: 15% 5% 5% 5%;
+  margin: auto;
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.indentStuff {
+  padding-left: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bodytext {
+  padding: 1rem;
+}
+
+.bodytextnotop {
+  padding: 1rem;
+  padding-top: 0rem;
+}
+
+.ButtonRight {
+  margin-right: 1rem;
+  padding-bottom: 0.8rem;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  border-bottom: 0.1rem solid white;
+}
+
+.ButtonRightNoUnderline {
+  padding-bottom: 0.2rem;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
+}
+
+.BottomBorder {
+  border-bottom: 0.1rem solid white;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.ProofBorder {
+  border-bottom: 0.1rem solid white;
+  margin-bottom: 0.9rem;
+}
+
+.emojiSpaceRight {
+  margin-right: 0.5rem;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.Top {
+  border-bottom: 0.1rem solid grey;
+}
+
+.bottomNav {
+  border-top: 0.1rem solid grey;
+}
+
+#spinner {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#shoutOutSpinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+#dash-money {
+  padding-top: 4px;
+  margin-left: 5px;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+.modal-backcolor-primary {
+  background-color: rgb(250, 250, 250);
+}
+
+.modal-backcolor-dark {
+  background-color: rgb(20, 20, 20);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* https://stackoverflow.com/questions/28096346/how-to-change-background-opacity-when-bootstrap-modal-is-open */
+/* modal-backdrop-nochange.show{
+  
+} */
+
+.modal-backdrop-dark.show {
+  background-color: rgb(150, 150, 150, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  margin-bottom: 6rem;
+}
+
+.locationTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cardTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.modalTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.textsmaller {
+  font-size: medium;
+  text-align: right;
+}
+
+.postModalCloseButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#card {
+  margin: 0.2rem;
+}
+
+.id-line {
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  word-break: break-all;
 }
